@@ -21,12 +21,12 @@ Summary(sv):	SNMP Perlmodul
 Summary(uk):	Модуль для Perl SNMP
 Summary(zh_CN):	SNMP Perl дё©И
 Name:		perl-SNMP_Session
-Version:	1.03
+Version:	1.05
 Release:	1
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.switch.ch/software/sources/network/snmp/perl/SNMP_Session-%{version}.tar.gz
-# Source0-md5:	fb9dbda2ede47578d38976bedb0a226b
+# Source0-md5:	3ec839c7f039d22d6b3aa990f7a25193
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
