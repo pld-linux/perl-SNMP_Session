@@ -1,8 +1,27 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
-Summary:	SNMP perl module
+Summary:	SNMP Perl module
+Summary(cs):	Modul SNMP pro Perl
+Summary(da):	Perlmodul SNMP
+Summary(de):	SNMP Perl Modul
+Summary(es):	Módulo de Perl SNMP
+Summary(fr):	Module Perl SNMP
+Summary(it):	Modulo di Perl SNMP
+Summary(ja):	SNMP Perl ¥â¥¸¥å¡¼¥ë
+Summary(ko):	SNMP ÆÞ ¸ðÁÙ
+Summary(no):	Perlmodul SNMP
 Summary(pl):	Modu³ perla do obs³ugi SNMP
+Summary(pt):	Módulo de Perl SNMP
+Summary(pt_BR):	Módulo Perl SNMP
+Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl SNMP
+Summary(sv):	SNMP Perlmodul
+Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl SNMP
+Summary(zh_CN):	SNMP Perl Ä£¿é
 Name:		perl-SNMP_Session
-Version:	0.92
+Version:	0.93
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
@@ -27,6 +46,7 @@ u¿ywane wspólnie, daj± dostêp do zewnêtrznych serwisów SNMP (v1/v2).
 %build
 perl Makefile.PL
 %{__make}
+%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
