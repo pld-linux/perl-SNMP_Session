@@ -4,7 +4,22 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	SNMP_Session - SNMP support for Perl 5
+Summary(cs):	Modul SNMP pro Perl
+Summary(da):	Perlmodul SNMP
+Summary(de):	SNMP Perl Modul
+Summary(es):	Módulo de Perl SNMP
+Summary(fr):	Module Perl SNMP
+Summary(it):	Modulo di Perl SNMP
+Summary(ja):	SNMP Perl ¥â¥¸¥å¡¼¥ë
+Summary(ko):	SNMP ÆŞ ¸ğÁÙ
+Summary(no):	Perlmodul SNMP
 Summary(pl):	SNMP_Session - obs³uga SNMP dla Perla 5
+Summary(pt):	Módulo de Perl SNMP
+Summary(pt_BR):	Módulo Perl SNMP
+Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl SNMP
+Summary(sv):	SNMP Perlmodul
+Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl SNMP
+Summary(zh_CN):	SNMP Perl Ä£¿é
 Name:		perl-SNMP_Session
 Version:	1.00
 Release:	1
