@@ -2,8 +2,8 @@
 Summary:	SNMP perl module
 Summary(pl):	Modu³ perla do obs³ugi SNMP
 Name:		perl-SNMP_Session
-Version:	0.89
-Release:	2
+Version:	0.90
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
