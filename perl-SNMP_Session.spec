@@ -3,7 +3,7 @@ Summary:	SNMP perl module
 Summary(pl):	Modu³ perla do obs³ugi SNMP
 Name:		perl-SNMP_Session
 Version:	0.89
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -15,8 +15,13 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This package contains Perl 5 modules SNMP_Session.pm and BER.pm, which, when
-used together, provide rudimentary access to remote SNMP (v1/v2) agents. 
+This package contains Perl 5 modules SNMP_Session.pm and BER.pm,
+which, when used together, provide rudimentary access to remote SNMP
+(v1/v2) agents. 
+
+%description -l pl
+Ten pakiet zawiera modu³y Perla 5 SNMP_Session.pm i BER.pm, które,
+u¿ywane wspólnie, daj± dostêp do zewnêtrznych serwisów SNMP (v1/v2).
 
 %prep
 %setup -q -n SNMP_Session-%{version}
