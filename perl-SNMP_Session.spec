@@ -1,33 +1,18 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-Summary:	SNMP Perl module
-Summary(cs):	Modul SNMP pro Perl
-Summary(da):	Perlmodul SNMP
-Summary(de):	SNMP Perl Modul
-Summary(es):	Módulo de Perl SNMP
-Summary(fr):	Module Perl SNMP
-Summary(it):	Modulo di Perl SNMP
-Summary(ja):	SNMP Perl ¥â¥¸¥å¡¼¥ë
-Summary(ko):	SNMP ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul SNMP
-Summary(pl):	Modu³ perla do obs³ugi SNMP
-Summary(pt):	Módulo de Perl SNMP
-Summary(pt_BR):	Módulo Perl SNMP
-Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl SNMP
-Summary(sv):	SNMP Perlmodul
-Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl SNMP
-Summary(zh_CN):	SNMP Perl Ä£¿é
+Summary:	SNMP_Session - SNMP support for Perl 5
+Summary(pl):	SNMP_Session - obs³uga SNMP dla Perla 5
 Name:		perl-SNMP_Session
-Version:	0.98
+Version:	1.00
 Release:	1
-License:	GPL
+License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.switch.ch/software/sources/network/snmp/perl/SNMP_Session-%{version}.tar.gz
-# Source0-md5:	12d54a77225213422ba53bf3e8764a99
-BuildRequires:	perl-devel >= 5.6.1
+# Source0-md5:	1a609ca5427213f74884127013622942
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -48,17 +33,19 @@ u¿ywane wspólnie, daj± dostêp do zewnêtrznych serwisów SNMP (v1/v2).
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
-%{!?_without_tests:%{__make} test}
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README* test
+%doc README* index.html test
 %{perl_vendorlib}/*.pm
