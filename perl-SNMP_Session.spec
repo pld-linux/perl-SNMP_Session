@@ -22,7 +22,7 @@ Summary(uk):	Модуль для Perl SNMP
 Summary(zh_CN):	SNMP Perl дё©И
 Name:		perl-SNMP_Session
 Version:	1.00
-Release:	1
+Release:	3
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.switch.ch/software/sources/network/snmp/perl/SNMP_Session-%{version}.tar.gz
