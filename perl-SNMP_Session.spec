@@ -22,12 +22,12 @@ Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl SNMP
 Summary(zh_CN):	SNMP Perl Ä£¿é
 Name:		perl-SNMP_Session
 Version:	0.94
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.switch.ch/software/sources/network/snmp/perl/SNMP_Session-%{version}.tar.gz
 BuildRequires:	perl >= 5.6.1
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -44,7 +44,8 @@ u¿ywane wspólnie, daj± dostêp do zewnêtrznych serwisów SNMP (v1/v2).
 %setup -q -n SNMP_Session-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 %{!?_without_tests:%{__make} test}
 
@@ -59,4 +60,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README* test
-%{perl_sitelib}/*.pm
+%{perl_vendorlib}/*.pm
