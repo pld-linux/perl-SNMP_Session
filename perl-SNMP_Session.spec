@@ -46,7 +46,7 @@ u¿ywane wspólnie, daj± dostêp do zewnêtrznych serwisów SNMP (v1/v2).
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 %{!?_without_tests:%{__make} test}
 
