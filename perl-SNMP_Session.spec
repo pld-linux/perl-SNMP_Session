@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	SNMP Perl module
@@ -21,11 +21,12 @@ Summary(sv):	SNMP Perlmodul
 Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl SNMP
 Summary(zh_CN):	SNMP Perl Ä£¿é
 Name:		perl-SNMP_Session
-Version:	0.98
-Release:	1
-License:	GPL
+Version:	1.00
+Release:	2
+License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.switch.ch/software/sources/network/snmp/perl/SNMP_Session-%{version}.tar.gz
+# Source0-md5:	1a609ca5427213f74884127013622942
 BuildRequires:	perl >= 5.6.1
 BuildRequires:	rpm-perlprov >= 4.0.2-104
 BuildArch:	noarch
@@ -46,17 +47,18 @@ u¿ywane wspólnie, daj± dostêp do zewnêtrznych serwisów SNMP (v1/v2).
 %build
 %{__perl} Makefile.PL
 %{__make}
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README* test
+%doc README* index.html test
 %{perl_sitelib}/*.pm
