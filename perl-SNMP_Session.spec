@@ -12,7 +12,7 @@ Summary(fr):	Module Perl SNMP
 Summary(it):	Modulo di Perl SNMP
 Summary(ja):	SNMP Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	SNMP ÆÞ ¸ðÁÙ
-Summary(nb):	Perlmodul SNMP
+Summary(no):	Perlmodul SNMP
 Summary(pl):	SNMP_Session - obs³uga SNMP dla Perla 5
 Summary(pt):	Módulo de Perl SNMP
 Summary(pt_BR):	Módulo Perl SNMP
