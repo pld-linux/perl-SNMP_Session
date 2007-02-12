@@ -4,22 +4,22 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	SNMP_Session - SNMP support for Perl 5
-Summary(cs):	Modul SNMP pro Perl
-Summary(da):	Perlmodul SNMP
-Summary(de):	SNMP Perl Modul
-Summary(es):	MÛdulo de Perl SNMP
-Summary(fr):	Module Perl SNMP
-Summary(it):	Modulo di Perl SNMP
-Summary(ja):	SNMP Perl •‚•∏•Â°º•Î
-Summary(ko):	SNMP ∆ﬁ ∏¡Ÿ
-Summary(nb):	Perlmodul SNMP
-Summary(pl):	SNMP_Session - obs≥uga SNMP dla Perla 5
-Summary(pt):	MÛdulo de Perl SNMP
-Summary(pt_BR):	MÛdulo Perl SNMP
-Summary(ru):	Ìœƒ’Ãÿ ƒÃ— Perl SNMP
-Summary(sv):	SNMP Perlmodul
-Summary(uk):	Ìœƒ’Ãÿ ƒÃ— Perl SNMP
-Summary(zh_CN):	SNMP Perl ƒ£øÈ
+Summary(cs.UTF-8):   Modul SNMP pro Perl
+Summary(da.UTF-8):   Perlmodul SNMP
+Summary(de.UTF-8):   SNMP Perl Modul
+Summary(es.UTF-8):   M√≥dulo de Perl SNMP
+Summary(fr.UTF-8):   Module Perl SNMP
+Summary(it.UTF-8):   Modulo di Perl SNMP
+Summary(ja.UTF-8):   SNMP Perl „É¢„Ç∏„É•„Éº„É´
+Summary(ko.UTF-8):   SNMP ÌéÑ Î™®Ï§Ñ
+Summary(nb.UTF-8):   Perlmodul SNMP
+Summary(pl.UTF-8):   SNMP_Session - obs≈Çuga SNMP dla Perla 5
+Summary(pt.UTF-8):   M√≥dulo de Perl SNMP
+Summary(pt_BR.UTF-8):   M√≥dulo Perl SNMP
+Summary(ru.UTF-8):   –ú–æ–¥—É–ª—å –¥–ª—è Perl SNMP
+Summary(sv.UTF-8):   SNMP Perlmodul
+Summary(uk.UTF-8):   –ú–æ–¥—É–ª—å –¥–ª—è Perl SNMP
+Summary(zh_CN.UTF-8):   SNMP Perl Ê®°Âùó
 Name:		perl-SNMP_Session
 Version:	1.05
 Release:	3
@@ -38,9 +38,9 @@ This package contains Perl 5 modules SNMP_Session.pm and BER.pm,
 which, when used together, provide rudimentary access to remote SNMP
 (v1/v2) agents.
 
-%description -l pl
-Ten pakiet zawiera modu≥y Perla 5 SNMP_Session.pm i BER.pm, ktÛre,
-uøywane wspÛlnie, daj± dostÍp do zewnÍtrznych serwisÛw SNMP (v1/v2).
+%description -l pl.UTF-8
+Ten pakiet zawiera modu≈Çy Perla 5 SNMP_Session.pm i BER.pm, kt√≥re,
+u≈ºywane wsp√≥lnie, dajƒÖ dostƒôp do zewnƒôtrznych serwis√≥w SNMP (v1/v2).
 
 %prep
 %setup -q -n SNMP_Session-%{version}
