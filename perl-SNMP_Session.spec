@@ -4,22 +4,22 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	SNMP_Session - SNMP support for Perl 5
-Summary(cs.UTF-8):   Modul SNMP pro Perl
-Summary(da.UTF-8):   Perlmodul SNMP
-Summary(de.UTF-8):   SNMP Perl Modul
-Summary(es.UTF-8):   Módulo de Perl SNMP
-Summary(fr.UTF-8):   Module Perl SNMP
-Summary(it.UTF-8):   Modulo di Perl SNMP
-Summary(ja.UTF-8):   SNMP Perl モジュール
-Summary(ko.UTF-8):   SNMP 펄 모줄
-Summary(nb.UTF-8):   Perlmodul SNMP
-Summary(pl.UTF-8):   SNMP_Session - obsługa SNMP dla Perla 5
-Summary(pt.UTF-8):   Módulo de Perl SNMP
-Summary(pt_BR.UTF-8):   Módulo Perl SNMP
-Summary(ru.UTF-8):   Модуль для Perl SNMP
-Summary(sv.UTF-8):   SNMP Perlmodul
-Summary(uk.UTF-8):   Модуль для Perl SNMP
-Summary(zh_CN.UTF-8):   SNMP Perl 模块
+Summary(cs.UTF-8):	Modul SNMP pro Perl
+Summary(da.UTF-8):	Perlmodul SNMP
+Summary(de.UTF-8):	SNMP Perl Modul
+Summary(es.UTF-8):	Módulo de Perl SNMP
+Summary(fr.UTF-8):	Module Perl SNMP
+Summary(it.UTF-8):	Modulo di Perl SNMP
+Summary(ja.UTF-8):	SNMP Perl モジュール
+Summary(ko.UTF-8):	SNMP 펄 모줄
+Summary(nb.UTF-8):	Perlmodul SNMP
+Summary(pl.UTF-8):	SNMP_Session - obsługa SNMP dla Perla 5
+Summary(pt.UTF-8):	Módulo de Perl SNMP
+Summary(pt_BR.UTF-8):	Módulo Perl SNMP
+Summary(ru.UTF-8):	Модуль для Perl SNMP
+Summary(sv.UTF-8):	SNMP Perlmodul
+Summary(uk.UTF-8):	Модуль для Perl SNMP
+Summary(zh_CN.UTF-8):	SNMP Perl 模块
 Name:		perl-SNMP_Session
 Version:	1.05
 Release:	3
