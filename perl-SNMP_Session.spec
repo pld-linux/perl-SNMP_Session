@@ -21,12 +21,12 @@ Summary(sv.UTF-8):	SNMP Perlmodul
 Summary(uk.UTF-8):	Модуль для Perl SNMP
 Summary(zh_CN.UTF-8):	SNMP Perl 模块
 Name:		perl-SNMP_Session
-Version:	1.11
+Version:	1.12
 Release:	1
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.switch.ch/misc/leinen/snmp/perl/dist/SNMP_Session-%{version}.tar.gz
-# Source0-md5:	6308adedd0eba8d3fd073f32b8768d04
+# Source0-md5:	5f6b365b4c3815b13d7a902d94e254af
 URL:		http://www.switch.ch/misc/leinen/snmp/perl/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
