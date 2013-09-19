@@ -27,6 +27,7 @@ License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://snmp-session.googlecode.com/files/SNMP_Session-%{version}.tar.gz
 # Source0-md5:	055e1065babf55f1f8606329c6bdb947
+Patch0:		%{name}-Socket6_conflict.patch
 URL:		http://code.google.com/p/snmp-session/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -44,6 +45,7 @@ używane wspólnie, dają dostęp do zewnętrznych serwisów SNMP (v1/v2).
 
 %prep
 %setup -q -n SNMP_Session-%{version}
+%patch0 -p0
 
 %build
 %{__perl} Makefile.PL \
