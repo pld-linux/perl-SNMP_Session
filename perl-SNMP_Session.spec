@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 Summary:	SNMP_Session - SNMP support for Perl 5
 Summary(cs.UTF-8):	Modul SNMP pro Perl
 Summary(da.UTF-8):	Perlmodul SNMP
