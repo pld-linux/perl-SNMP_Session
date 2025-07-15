@@ -44,7 +44,7 @@ używane wspólnie, dają dostęp do zewnętrznych serwisów SNMP (v1/v2).
 
 %prep
 %setup -q -n SNMP_Session-%{version}
-%patch0 -p0
+%patch -P0 -p0
 
 %build
 %{__perl} Makefile.PL \
