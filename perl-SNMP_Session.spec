@@ -21,7 +21,7 @@ Summary(uk.UTF-8):	Модуль для Perl SNMP
 Summary(zh_CN.UTF-8):	SNMP Perl 模块
 Name:		perl-SNMP_Session
 Version:	1.13
-Release:	2
+Release:	3
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://snmp-session.googlecode.com/files/SNMP_Session-%{version}.tar.gz
